@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRENCY CONVERTER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1 id="HEADING">CURRENCY CONVERTER</h1>
+        <form action="">
+            <div class="amount">
+                <p>Enter amount:</p>
+                <input type="text" >
+            </div>
+            <div class="dropdowns">
+                <div class="from" id="from">
+                    <p>From:</p>
+                    <div class="select-container from">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                        <select name="from" id="">
+                            <option value="USD">USD</option>
+                            <!--options will be added using js-->
+                        </select>
+                    </div>
+                </div>
+                <div class="swapsymbol"><i class="fa-solid fa-arrow-right-arrow-left",id="swapsymbol"></i></div>
+                <div class="to" id="to">
+                    <p>To:</p>
+                    <div class="select-container to">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="flag">
+                        <select name="to" id="">
+                            <option value="INR">INR</option>
+                            <!--options will be added using js-->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="msg">
+                <pre> CURRENT VALUE : </pre>
+                <p id="info">1USD=80INR(APPX)</p>
+            </div>
+            <br>
+            <BUtton>GET EXCHANGE VALUE</BUtton>
+        </form>
+    </div>
+     <script src="CountryCodes.js"></script>
+    <script src="JavaScript.js"></script>
+</body>
+</html>
